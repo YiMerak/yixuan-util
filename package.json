@@ -1,0 +1,24 @@
+{
+  "name": "yixuan-util",
+  "type": "module",
+  "main": "target/index.js",
+  "types": "target/index.d.ts",
+  "author": "Yixuan",
+  "license": "MIT",
+  "private": false,
+  "version": "0.1.0",
+  "scripts": {
+    "mount": "pnpm add -D @biomejs/biome typescript",
+    "serve": "tsx ./source/test.ts",
+    "build": "tsc",
+    "publish": "npm version patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
+    "typescript": "^5.4.5"
+  }
+}

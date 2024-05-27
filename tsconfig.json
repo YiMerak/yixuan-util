@@ -1,0 +1,58 @@
+{
+  // 需编译目录
+  "include": [
+    "source/**/*.ts",
+    "source/**/*.d.ts",
+    "vitest/**/*.test.ts"
+  ],
+  // 不编译目录
+  "exclude": [
+    "**/*.js",
+    "**/*.mjs",
+    "public",
+    "script",
+    "target",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    // 允许 `JavaScript`
+    "allowJs": false,
+    // 声明文件
+    "declaration": true,
+    // 环境仓库
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    // 模板导入方式
+    "module": "ESNext",
+    // 模块解析策略
+    "moduleResolution": "Bundler",
+    // 禁止隐式`any`
+    "noImplicitAny": true,
+    // 输出文件
+    "outDir": "target",
+    // 路径别名配置
+    "paths": {
+      "@/*": [
+        "./source/*"
+      ]
+    },
+    // 输入文件
+    "rootDirs": [
+      "source",
+    ],
+    // 严格检查
+    "strict": true,
+    // 文件映射
+    "sourceMap": false,
+    // 需兼容的版本
+    "target": "ESNext",
+  },
+  "resolve": {
+    "extensions": [
+      ".js",
+      ".ts",
+    ]
+  }
+}
