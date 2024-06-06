@@ -1,13 +1,17 @@
 # 安装
 
 ```
-pnpm i yixuan-util
+bun add yixuan-util
+```
+
+```
+pnpm add yixuan-util
 ```
 
 # 使用
 
 ```ts
-import {} from 'yixuan-util'
+import { ... } from "yixuan-util"
 ```
 
 # 版本
@@ -97,6 +101,8 @@ import {} from 'yixuan-util'
     - DOM
       - CopyText
       - PickFile
+- 0.1.1
+  - 修复`NodeJS`环境下模块导入异常
 
 # 规划
 
@@ -109,8 +115,11 @@ import {} from 'yixuan-util'
     - lowerToSnake
     - lowerKeyToSnake
   - Tree
-    - trace(): 追根溯源
+    - trace
 
+# 开发环境
+
+- Bun: 1.1.12
 
 # 发布流程
 

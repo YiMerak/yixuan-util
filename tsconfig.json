@@ -3,7 +3,6 @@
   "include": [
     "source/**/*.ts",
     "source/**/*.d.ts",
-    "vitest/**/*.test.ts"
   ],
   // 不编译目录
   "exclude": [
@@ -42,17 +41,13 @@
     "rootDirs": [
       "source",
     ],
+    // 跳过目录
+    "skipLibCheck": true,
     // 严格检查
     "strict": true,
     // 文件映射
     "sourceMap": false,
     // 需兼容的版本
     "target": "ESNext",
-  },
-  "resolve": {
-    "extensions": [
-      ".js",
-      ".ts",
-    ]
   }
 }
