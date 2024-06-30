@@ -108,8 +108,7 @@
 			"lineWidth": 160,
 			"quoteProperties": "asNeeded",
 			"quoteStyle": "single",
-			"semicolons": "asNeeded",
-			"trailingComma": "all"
+			"semicolons": "asNeeded"
 		}
 	},
 	"organizeImports": {
